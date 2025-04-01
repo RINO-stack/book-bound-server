@@ -12,7 +12,7 @@ const jwtSecretKey = process.env.JWT_SECRET_KEY || 'your_jwt_secret_key';
 
 // Middleware
 const corsOptions = {
-  origin: 'https://book-bound-frontend.vercel.app',  // Your Vercel frontend URL
+  origin: ['http://localhost:5173' , 'https://book-bound-frontend.vercel.app'],  // Your Vercel frontend URL
   methods: ['GET', 'POST', 'PATCH', 'DELETE'],  
   credentials: true
 };
